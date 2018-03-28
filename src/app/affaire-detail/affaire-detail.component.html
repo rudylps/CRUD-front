@@ -1,28 +1,27 @@
 <div class="container">
-          <div class="ligne1">
-              <h2 *ngIf="affaire" >Détail de l'affaire</h2>
-           
-            <div class="ligne2" >
-                <div class="gauche"  fxLayout.xs="row">
-                    <form #affaireData (ngSubmit)="updateAffaire(affaireData)" class="example-form">
+    <div class="ligne1">
+        <h2 *ngIf="affaire" >Détail de l'affaire</h2>
+        <div class="ligne2" >
+            <div class="gauche"  fxLayout.xs="row">
+                <form #affaireData (ngSubmit)="updateAffaire(affaireData)" class="example-form">
                     <mat-form-field class="example-full-width">
-                    <p>Id</p>
-                    <input matInput class="id"  disabled=true [(ngModel)]="affaire.id" [ngModelOptions]="{standalone: true}">
-                </mat-form-field>
-                <mat-form-field class="example-full-width">
-                    <p>Lieu</p>
-                    <input matInput class="lieu"  [(ngModel)]="affaire.lieu" [ngModelOptions]="{standalone: true}">
+                        <p>Id</p>
+                        <input matInput class="id"  disabled=true [(ngModel)]="affaire.id" [ngModelOptions]="{standalone: true}">
                     </mat-form-field>
-                    <p>Rapport</p>
                     <mat-form-field class="example-full-width">
-                    <input matInput class="rapport"  [(ngModel)]="affaire.rapport" [ngModelOptions]="{standalone: true}">
-                </mat-form-field>
+                        <p>Lieu</p>
+                        <input matInput class="lieu"  [(ngModel)]="affaire.lieu" [ngModelOptions]="{standalone: true}">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <p>Rapport</p>
+                        <input matInput class="rapport"  [(ngModel)]="affaire.rapport" [ngModelOptions]="{standalone: true}">
+                        </mat-form-field>
                     <button (click)="deleteAffaire()">supprimer</button>
                     <button type="submit" >Editer</button>
                 </form>
-                </div>
             </div>
-          </div>
+        </div>
+    </div>
               
           
           
