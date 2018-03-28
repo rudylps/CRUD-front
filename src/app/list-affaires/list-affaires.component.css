@@ -1,0 +1,17 @@
+.blue {
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.contient {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div {
+    align-content: left;
+    widows: 0.8em;
+}

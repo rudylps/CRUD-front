@@ -1,0 +1,14 @@
+<h2 *ngIf="listAffaires.length!=0">Liste des affaires</h2>
+<div >
+  <mat-card class='blue' *ngFor='let a of listAffaires' [routerLink]="['/affaire',a.id]">
+    <div class="contient">
+      <div>
+        <h5>Nom de l'affaire: {{ a.nom }}</h5>
+        <p>Lieu: {{ a.lieu }}</p>
+      </div>
+    </div> 
+  </mat-card>
+</div>
+<div *ngIf="listAffaires.length==0">
+  <h2>Aucune affaire en cours... </h2>
+</div>

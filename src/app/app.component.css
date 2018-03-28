@@ -1,0 +1,25 @@
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(23, 23, 71);
+}
+
+h2 {
+    color:white;
+}
+
+button:hover {
+    background-color: rgb(207, 207, 19);
+    color:rgb(23, 23, 71);
+}
+
+button {
+    color: white;
+}
