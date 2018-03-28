@@ -19,30 +19,32 @@ export class AffaireDetailComponent implements OnInit {
               private apiService: ApiService,
               private route: ActivatedRoute) { }
 
+  //Initiatisation du composant
   ngOnInit() {
 
     this.route.paramMap.subscribe((params: ParamMap) => {
-      this.id = params.get('id');
-     const affaireIdAsInt = parseInt(this.id, 10);
+    this.id = params.get('id');
+    const affaireIdAsInt = parseInt(this.id, 10);
 
-      console.log('suspectId' + this.id);
-      this.affaireService
-       .getAffaire(affaireIdAsInt)
-       .subscribe(
+    
+    this.affaireService
+      .getAffaire(affaireIdAsInt)
+      .subscribe(
          affaire => (this.affaire = affaire),
       );
     });
 
   }
 
+  // Suppression de l'affaire
   deleteAffaire() {
     this.affaireService.deleteAffaire(this.affaire.id).subscribe(
-      () => this.router.navigate(['/affaires'])
+      () => this.router.navigate(['/affaires'])  //Redirige vers la route "/affaires" à l'aide d'un callBack
     );
   }
 
+  // Mise à jour affaire
   updateAffaire(affaire:Affaire) {
-
     this.affaireService.updateAffaire(this.affaire).subscribe(
       () => this.router.navigate(['/affaires'])
     );

@@ -1,3 +1,5 @@
+
+<!-- Affichage de la liste des affaires s'il en existe, sinon message "aucune affaire" -->
 <h2 *ngIf="listAffaires.length!=0">Liste des affaires</h2>
 <div >
   <mat-card class='blue' *ngFor='let a of listAffaires' [routerLink]="['/affaire',a.id]">
