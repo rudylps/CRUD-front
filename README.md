@@ -3,7 +3,7 @@
 Réalisation d'un projet CRUD fonctionnel à partir du projet fil-rouge
 Ce projet doit inclure la partie back, et la partie front du projet. Il s'agit ici de la partie front permettant de tester l'application via une IHM
 ## Outils utilisés
-Le front a entièrement été développé grace au FRAMEWORK ANGULAR 4
+Le front a entièrement été développé grace au FRAMEWORK ANGULAR 5
 Utilisation de Angular CLI pour faciliter la gestion des composants
 ## Partie personnelle
 J'ai réalisé la partie front-end liée aux affaires
